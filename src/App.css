@@ -1,0 +1,120 @@
+/* Mobile-First */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero__text{
+  border-bottom: 1px solid rgb(206, 198, 198);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.logo {
+  width: 100%;
+  height: 200px;
+  background-image: url('../src/assets/tmsph-ls-midafood.jpeg');
+  background-size: cover;
+  object-position: 25% 0;
+  background-repeat: no-repeat;
+}
+
+.date {
+  font-family: "Roboto", sans-serif;
+  width: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 18px;
+  border: 1px solid black;
+  background-color: rgb(236, 6, 6);
+  color: white;
+  border: none;
+  
+  position: relative;
+  left: 20px;
+  top: 140px;
+
+  transform: skew(-8deg);
+}
+
+.date, 
+.day, 
+.month {
+  margin: 0;
+}
+
+.day,
+.month {
+  transform: skew(10deg);
+}
+
+.day {
+  font-size: 1.5rem;
+}
+
+.month {
+  font-size: .9rem;
+}
+
+.link-share {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.news_title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.news_body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.img-share {
+  max-width: 6%;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-style: none;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+
+/* tablet */
+@media (min-width: 700px) {
+  .logo {
+    width: 100%;
+    height: 480px;
+  }
+
+  .date {
+      top: 420px;
+    }
+
+  .img-share {
+      max-width: 2%;
+    }
+      
+}
